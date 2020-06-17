@@ -5,7 +5,7 @@ yum update -y
 
 yum install cifs-utils -y
 
-sudo mkdir '$4'
+sudo mkdir "$4"
 if [ ! -d "/etc/smbcredentials" ]; then
 sudo mkdir /etc/smbcredentials
 fi
