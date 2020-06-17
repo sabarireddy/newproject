@@ -8,6 +8,7 @@ yum install cifs-utils -y
 sudo mkdir "$4"
 if [ ! -d "/etc/smbcredentials" ]; then
 sudo mkdir /etc/smbcredentials
+sudo touch /etc/smbcredentials/prodqaeastusstorage.cred
 fi
 if [ ! -f "/etc/smbcredentials/prodqaeastusstorage.cred" ]; then
     sudo bash -c 'echo "username="$1"" >> /etc/smbcredentials/prodqaeastusstorage.cred'
