@@ -10,8 +10,8 @@ if [ ! -d "/etc/smbcredentials" ]; then
 sudo mkdir /etc/smbcredentials
 fi
 if [ ! -f "/etc/smbcredentials/prodqaeastusstorage.cred" ]; then
-    sudo bash -c 'echo "username=$1" >> /etc/smbcredentials/prodqaeastusstorage.cred'
-    sudo bash -c 'echo "password=$2" >> /etc/smbcredentials/prodqaeastusstorage.cred'
+    sudo bash -c 'echo "username="$1"" >> /etc/smbcredentials/prodqaeastusstorage.cred'
+    sudo bash -c 'echo "password="$2"" >> /etc/smbcredentials/prodqaeastusstorage.cred'
 fi
 sudo chmod 600 /etc/smbcredentials/prodqaeastusstorage.cred
 
