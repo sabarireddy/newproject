@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo -s
 
 yum update -y
 
